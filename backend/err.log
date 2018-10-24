@@ -1,0 +1,139 @@
+Exception on /api [PUT]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 47, in put
+    print(res)
+UnboundLocalError: local variable 'res' referenced before assignment
+Exception on /api [PUT]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 47, in put
+    return
+UnboundLocalError: local variable 'res' referenced before assignment
+Exception on /api [POST]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 40, in post
+    return db.things.find_one({"data": data}, {"_id":0, "data":1})
+NameError: name 'data' is not defined
+Exception on /api [POST]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 40, in post
+    print("auto_reload!")
+NameError: name 'data' is not defined
+Exception on /api [PUT]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 46, in put
+    db.things.update({"data": res["data"]}, {"$set": {field: res[field]}})
+KeyError: 'data'
+Exception on /api [PUT]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 46, in put
+    db.things.update({"data": res["data"]}, {"$set": {field: res[field]}})
+KeyError: 'data'
+Exception on /api [PUT]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 46, in put
+    db.things.update({"data": res["data"]}, {"$set": {field: res[field]}})
+KeyError: 'data'
+Exception on /api [PUT]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 46, in put
+    db.things.update({"data": res["data"]}, {"$set": {field: res[field]}})
+KeyError: 'data'
+Exception on /api [GET]
+Traceback (most recent call last):
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/jhsiao/anaconda/envs/py3/lib/python3.5/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 73, in get
+    return self.get_advanced()
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 68, in get_advanced
+    return {"things": list(db.things.find(self.get_perspective(req), {"_id":0}))}
+  File "/Users/jhsiao/web_develop/try_fr/backend/api.py", line 45, in get_perspective
+    return custom_tags_perspective(persp["and_tags"], persp["any_tags"], persp["not_tags"])
+TypeError: 'NoneType' object is not subscriptable

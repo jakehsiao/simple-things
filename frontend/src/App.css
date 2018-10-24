@@ -1,0 +1,70 @@
+.list {
+  display: inline-block;
+  padding: 10px;
+  width: 275px;
+  height: 500px;
+}
+
+.list-view{
+  padding: 18px;
+  padding-top: 0px; 
+}
+
+.thing {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 100px;
+  width: 400px;
+  height: 500px;
+}
+
+.persp {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 50px;
+  padding-left: 10px;
+  width: 250px;
+  height: 500px;
+}
+
+.persp-dropmenu{
+  width: 150px;
+}
+
+.persp-listbox{
+  width: 150px;
+  height: 300px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
